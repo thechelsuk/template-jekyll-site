@@ -1,0 +1,42 @@
+# Site settings. Change title, description, url and repository for the new
+# site; url must match CNAME.
+title: "Site name"
+description: "One line about the site"
+author: "thechelsuk"
+url: https://example.thechels.uk
+copyright: "thechelsuk"
+repository: thechelsuk/template-jekyll-site
+
+highlighter: rouge
+permalink: /:title
+encoding: UTF-8
+timezone: Europe/London
+future: false
+port: 4000
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+include:
+  - ".well-known"
+
+exclude:
+  - .ruby-version
+  - .bundle/
+  - .github/
+  - .editorconfig
+  - .jekyll-cache/
+  - .sass-cache/
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/

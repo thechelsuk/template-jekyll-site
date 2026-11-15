@@ -1,0 +1,15 @@
+---
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    assignees:
+      - thechelsuk
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "bundler"
+    directory: "/"
+    assignees:
+      - thechelsuk
+    schedule:
+      interval: "weekly"
